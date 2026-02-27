@@ -53,4 +53,10 @@ public class Cylinder extends Circle {
         return String.format("Cylinder[Circle[radius=%.2f,color=%s],height=%.2f]", getHeight(), getColor(), height);
     }
     
+    // add following in to Cylinder.java
+    @Override
+    public double getArea() {
+        return 2 * super.getArea() + 2*Math.PI*getRadius();
+
+    }
  }

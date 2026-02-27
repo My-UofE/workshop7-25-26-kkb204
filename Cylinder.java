@@ -59,4 +59,14 @@ public class Cylinder extends Circle {
         return 2 * super.getArea() + 2*Math.PI*getRadius();
 
     }
+
+    // instance method
+    public void printClassInfo(){
+        System.out.println("It is a Cylinder class");
+    }
+
+    // static method
+    public static void printClassInfoStatic(){
+        System.out.println("It is a Cylinder class");
+    }
  }
